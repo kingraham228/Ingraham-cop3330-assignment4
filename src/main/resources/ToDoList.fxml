@@ -50,16 +50,12 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1"
-        fx:controller="ucf.assignments.FXController">
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ucf.assignments.FXController">
   <children>
     <MenuBar VBox.vgrow="NEVER">
       <menus>
         <Menu mnemonicParsing="false" text="File">
           <items>
-            <MenuItem fx:id="mNewList" mnemonicParsing="false" text="New List" />
-                  <MenuItem fx:id="mNewItem" mnemonicParsing="false" text="New Item" />
-                  <SeparatorMenuItem mnemonicParsing="false" />
             <MenuItem fx:id="mImportList" mnemonicParsing="false" text="Import a List" />
                   <MenuItem fx:id="mImportAll" mnemonicParsing="false" text="Import Multiple Lists" />
             <SeparatorMenuItem mnemonicParsing="false" />
@@ -69,6 +65,9 @@
         </Menu>
         <Menu mnemonicParsing="false" text="Edit">
           <items>
+                  <MenuItem fx:id="mEditListTitle" mnemonicParsing="false" text="Edit List Title" />
+                  <MenuItem fx:id="mEditItem" mnemonicParsing="false" text="Edit Item" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
             <MenuItem fx:id="mDeleteList" mnemonicParsing="false" text="Delete List" />
                   <MenuItem fx:id="mDeleteItem" mnemonicParsing="false" text="Delete Item" />
           </items>
