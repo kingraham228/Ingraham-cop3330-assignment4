@@ -1,0 +1,52 @@
+@startuml
+class Item{
+-descript: String
+-dueDate: Date
+-completeStatus: boolean
++editDescription()
++editDueDate()
++markComplete()
++getItem()
+}
+
+class ToDoList{
+-listTitle: String
+-items: ArrayList
++editTitle()
++addItem()
++removeItem()
++getToDo()
+}
+
+class Lists{
+-toDoLists: Map
++addList()
++removeList()
++getLists()
+}
+
+class FileManager{
++saveOneList()
++saveAll()
++loadOneList()
++loadAll()
+}
+
+class ListDisplay{
++displayAllItems()
++displayUncompleted()
++displayCompleted()
+}
+
+class App{
+main()
+start()
+}
+
+
+App o-- Lists
+App o-- ListDisplay
+App o-- FileManager
+Lists *-- ToDoList
+ToDoList *-- Item
+@enduml
