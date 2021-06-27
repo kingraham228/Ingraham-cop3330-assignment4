@@ -25,7 +25,4 @@ javafx{
     modules = ['javafx.controls', 'javafx.fxml']
 }
 
-application{
-    //add mainclass name
-   // mainClass =
-}
+   mainClassName = 'App'

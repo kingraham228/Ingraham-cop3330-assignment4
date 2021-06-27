@@ -1,12 +1,14 @@
 @startuml
 class Item{
--descript: String
+-description: String
 -dueDate: Date
 -completeStatus: boolean
 +editDescription()
 +editDueDate()
 +markComplete()
-+getItem()
++getDescription()
++getDueDate()
++getCompleteStatus()
 }
 
 class ToDoList{
@@ -15,7 +17,8 @@ class ToDoList{
 +editTitle()
 +addItem()
 +removeItem()
-+getToDo()
++getListTitle()
++getItems()
 }
 
 class Lists{
@@ -28,8 +31,8 @@ class Lists{
 class FileManager{
 +saveOneList()
 +saveAll()
-+loadOneList()
-+loadAll()
++openOneList()
++openAll()
 }
 
 class ListDisplay{
@@ -38,15 +41,38 @@ class ListDisplay{
 +displayCompleted()
 }
 
+class FXController{
++uaAddList()
++uaRemoveList()
++uaEditTitle()
++uaAddItem()
++uaRemoveItem()
++uaEditItem()
++uaMarkComplete()
++setItemView()
++uaSaveList()
++uaSaveAll()
++uaImportList()
++uaImportAll()
+}
+
 class App{
 main()
 start()
 }
 
+class InputValidator{
++checkFileName()
++checkDate()
+}
 
-App o-- Lists
-App o-- ListDisplay
-App o-- FileManager
+
+
+App *-- FXController
+FXController o-- Lists
+FXController o-- ListDisplay
+FXController o-- FileManager
+FXController o-- InputValidator
 Lists *-- ToDoList
 ToDoList *-- Item
 @enduml
