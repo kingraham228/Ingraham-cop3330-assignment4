@@ -17,7 +17,7 @@ public class FileManager {
     }
 
     public ToDoList openOneList(){
-       ToDoList fileToDoList = new ToDoList();
+       ToDoList fileToDoList = new ToDoList("");
         //open a ToDoList from a txt file
         //read in file information
         //parse file information into a new ToDoList

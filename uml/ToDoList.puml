@@ -36,9 +36,11 @@ class FileManager{
 }
 
 class ListDisplay{
+-displayArray
 +displayAllItems()
 +displayUncompleted()
 +displayCompleted()
+-emptyDisplayArray()
 }
 
 class FXController{

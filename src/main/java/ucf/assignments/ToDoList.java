@@ -4,27 +4,28 @@ package ucf.assignments;
  *  Copyright 2021 Kate Ingraham
  */
 import java.util.ArrayList;
-
+import java.util.Date;
 
 
 public class ToDoList {
     private String listTitle;
     private ArrayList<Item> items = new ArrayList<>();
 
-    public ToDoList() {
-        //construct ToDoList with List title
+    public ToDoList(String listTitle) {
+        //construct an empty ToDoList with List title
     }
 
-    public void editTitle(){
+    public void editTitle(String listTitle){
         //set listTitle to a new title
     }
 
-    public void addItem(){
+    public void addItem(String description, Date dueDate){
         //create a new item
         //add a new item to the items array list
     }
 
-    public void removeItem(){
+    public void removeItem(Item targetItem){
+        //get the index of the targetItem
         //remove an item from the items list
     }
 

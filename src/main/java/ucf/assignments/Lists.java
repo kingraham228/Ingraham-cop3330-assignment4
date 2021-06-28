@@ -11,13 +11,14 @@ import java.util.Map;
 public class Lists {
     private Map<String, ArrayList<Item>> toDoLists = new HashMap<>();
 
-    public void addList(){
+    public void addList(String listName){
         //Create a new ToDoList
         //Add it to the map
     }
 
-    public void removeList(){
-        //remove a ToDoList from the map
+    public void removeList(String listName){
+        //Match map key by list name
+        //remove the ToDoList from the map
     }
 
     public Map<String, ArrayList<Item>> getToDoLists() {
