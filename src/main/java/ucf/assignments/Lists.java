@@ -12,8 +12,12 @@ public class Lists {
     private Map<String, ArrayList<Item>> toDoLists = new HashMap<>();
 
     public void addList(String listName){
-        //Create a new ToDoList
+        //Create a new empty ToDoList
         //Add it to the map
+    }
+
+    public void addList(String listName, ToDoList userList){
+        //add userList to the map with key listName
     }
 
     public void removeList(String listName){

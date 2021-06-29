@@ -8,12 +8,6 @@ import java.nio.file.Path;
 
 public class InputValidator {
 
-    public boolean checkFileName(String filename){
-        //Check to make sure that the file input is in the correct format
-            //Check for a .txt extension
-        //If not, prompt user to enter the file name again
-        return true;
-    }
     
     public boolean checkDate(String date){
         //Check to make sure that the date is in the proper format

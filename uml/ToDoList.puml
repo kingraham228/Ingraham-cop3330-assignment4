@@ -36,26 +36,15 @@ class FileManager{
 }
 
 class ListDisplay{
--displayArray
-+displayAllItems()
-+displayUncompleted()
-+displayCompleted()
+-displayArray: ArrayList
++displayItems()
+-displayUncompleted()
+-displayCompleted()
 -emptyDisplayArray()
 }
 
-class FXController{
-+uaAddList()
-+uaRemoveList()
-+uaEditTitle()
-+uaAddItem()
-+uaRemoveItem()
-+uaEditItem()
-+uaMarkComplete()
-+setItemView()
-+uaSaveList()
-+uaSaveAll()
-+uaImportList()
-+uaImportAll()
+class ToDoController{
+
 }
 
 class App{
@@ -64,17 +53,17 @@ start()
 }
 
 class InputValidator{
-+checkFileName()
 +checkDate()
 }
 
 
 
-App *-- FXController
-FXController o-- Lists
-FXController o-- ListDisplay
-FXController o-- FileManager
-FXController o-- InputValidator
+
+App -- ToDoController
+ToDoController o-- Lists
+ToDoController o-- ListDisplay
+ToDoController o-- FileManager
+ToDoController o-- InputValidator
 Lists *-- ToDoList
 ToDoList *-- Item
 @enduml

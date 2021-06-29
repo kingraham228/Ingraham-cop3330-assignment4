@@ -9,27 +9,32 @@ import java.util.ArrayList;
 public class ListDisplay {
     private ArrayList<Item> displayArray = new ArrayList<>();
 
-    public void displayAllItems(Lists userLists, String listName){
+    public void displayItems(Lists userLists, String listName){
         //call emptyDisplayArray()
-        //set listName as the key value in userLists
-        //Set displayArray equal to the value of listName
-        //show displayArray in the tableview of the GUI
+        //If both view menu items are selected OR none are selected (default)
+            //set listName as the key value in userLists
+            //Set displayArray equal to the value of listName
+            //show displayArray in the listview of the GUI
+        //If only show uncompleted is selected
+            //call displayUncompleted()
+        //if only show completed is selected
+            //call displayCompleted()
     }
 
-    public void displayUncompleted(Lists userLists, String listName){
+    private void displayUncompleted(Lists userLists, String listName){
         //call emptyDisplayArray()
         //set listName as the key value in userLists
         //set value of lisName as the Item arraylist
         //for each item, if the status is uncompleted, add it to the display array
-        //show displayArray in the tableview of the GUI
+        //show displayArray in the listview of the GUI
     }
 
-    public void displayCompleted(Lists userLists, String listName){
+    private void displayCompleted(Lists userLists, String listName){
         //call emptyDisplayArray()
         //set listName as the key value in userLists
         //set value of lisName as the Item arraylist
         //for each item, if the status is completed, add it to the display array
-        //show displayArray in the tableview of the GUI
+        //show displayArray in the listview of the GUI
     }
 
     private void emptyDisplayArray(){
