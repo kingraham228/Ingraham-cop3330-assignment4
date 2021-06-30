@@ -5,15 +5,25 @@ package ucf.assignments;
  */
 
 
+import java.util.ArrayList;
+import java.util.Map;
 
 public class FileManager {
 
-    public void saveOneList(){
-        //Save a ToDolist and items to a JSON file
+    public void saveOneList(String listName, ArrayList<Item> listItems){
+        //Save a ToDolist and items to a txt file
+        //try opening a formatter with a file to the root with listName.txt
+            //send an alert if there is an exception
+        //output a header with the list name to the txt file
+        //output each list item to the txt file
     }
 
-    public void saveAll(){
-        //Save all ToDolists and items to a JSON file
+    public void saveAll(Map<String, ArrayList<Item>> toDoLists){
+        //Save all ToDolists and items to a txt file
+        //try opening a formatter with a file to the root with ToDoLists.txt
+            //send an alert if there is an exception
+        //output a header for each key value to the txt file
+        //output each list item to the txt file
     }
 
     public ToDoList openOneList(String filename){

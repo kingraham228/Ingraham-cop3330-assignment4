@@ -91,8 +91,8 @@
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <ChoiceBox maxWidth="1.7976931348623157E308" GridPane.columnIndex="1" GridPane.columnSpan="2" />
-            <ListView prefHeight="200.0" prefWidth="200.0" GridPane.columnSpan="4" GridPane.rowIndex="1" GridPane.rowSpan="2">
+            <ChoiceBox fx:id="cbLists" maxWidth="1.7976931348623157E308" onInputMethodTextChanged="#cbListSelect" GridPane.columnIndex="1" GridPane.columnSpan="2" />
+            <ListView fx:id="listView" onMouseClicked="#lvItemSelected" prefHeight="200.0" prefWidth="200.0" GridPane.columnSpan="4" GridPane.rowIndex="1" GridPane.rowSpan="2">
                <GridPane.margin>
                   <Insets bottom="8.0" left="16.0" right="16.0" />
                </GridPane.margin></ListView>

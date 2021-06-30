@@ -6,6 +6,12 @@ package ucf.assignments;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.CheckMenuItem;
+import javafx.scene.control.ChoiceBox;
+import javafx.scene.control.ListView;
+import javafx.scene.input.InputMethodEvent;
+import javafx.scene.input.MouseEvent;
+
+import java.util.ArrayList;
 
 
 public class ToDoListController {
@@ -13,8 +19,27 @@ public class ToDoListController {
     public CheckMenuItem mCheckUncompleted;
     @FXML
     public CheckMenuItem mCheckCompleted;
+    @FXML
+    public ListView listView;
+    @FXML
+    public ChoiceBox cbLists;
 
-    //create a Lists object
+    //create a Lists object userLists
+    //create a FileManager object
+    //create a ListDisplay object
+    //create an observable list of objects
+
+    public void updateListView(ArrayList<Item> displayArray ){
+        //make the observable list equal the display array
+    }
+
+    public void updateCBList(){
+        //if there are existing CBList items
+            // remove all CBList items
+        //if userLists is not empty
+            // add all userLists map keys as CBList items
+    }
+
 
     @FXML
     public void mLoadListClicked(ActionEvent actionEvent) {
@@ -22,9 +47,11 @@ public class ToDoListController {
         //ask the user to input the file name
         //set String filename to user input
         //create a new ToDoList with the file name
-        //call openOneList()
-        //call addList()
-        //call displayItems()
+        //set ToDoList with call openOneList()
+        //call addList() with String filename and ToDoList
+        //call updateCBList()
+        //call displayItems() with filename and value of filename
+        //call updateListView() with getdisplayArray()
     }
 
     @FXML
@@ -32,29 +59,59 @@ public class ToDoListController {
         //open a text input dialogue
         //ask the user to input the file name
         //set String filename to user input
-        //create a new ToDoList with the file name
-        //call openAll()
-        //merge the returned map with the Lists object
-        //call displayItems()
+        //create a new listMap called loadMap
+        //set loadMap with call openAll() with filename
+        //call mergeLists() with loadMap and userLists
+        //call updateCBList()
     }
 
     @FXML
     public void mSaveListClicked(ActionEvent actionEvent) {
+        //get the listView selectionModel
+        //set String listname to the selection model
+        //get the Lists value of listname
+        //call saveOneList() with listname and value of listname
     }
     @FXML
     public void mSaveAllListsClicked(ActionEvent actionEvent) {
+        //call saveAll() with userLists
     }
     @FXML
     public void mAddListClicked(ActionEvent actionEvent) {
+        //open a text input dialogue
+        //ask the user to input the new list name
+        //set String listName to user input
+        //call addList() with listName
+        //call updateCBList()
+        //call displayItems() with listName and value of listname
+        //call updateListView() with getdisplayArray()
     }
     @FXML
     public void mEditListClicked(ActionEvent actionEvent) {
+        //get the cbLists selection model
+        //set String oldName to the existing listname
+        //open a text input dialogue
+            //existing list name in the textfield
+        //set String newListName to new user input
+        //call addList() newListName, value of oldName
+        //call removeList() oldName map entry
+        //call updateCBList()
+        //call displayItems() newListName, value of newListName
+        //call updateListView() with getDisplayArray()
     }
     @FXML
     public void mDeleteListClicked(ActionEvent actionEvent) {
+        //get the cbLists selection model
+        //call removeList() with selection model value
+        //call updateCBList()
+        //call emptyDisplayArray()
+        //call updateListView() with getDisplayArray()
     }
     @FXML
     public void mDisplayUncompletedClicked(ActionEvent actionEvent) {
+        //get the cbLists selection model
+        //call displayItems() with the selection model and value of selection model
+        //call updateListView() with getDisplayArray()
     }
     @FXML
     public void mDisplayCompletedClicked(ActionEvent actionEvent) {
@@ -76,5 +133,11 @@ public class ToDoListController {
     }
     @FXML
     public void bCompleteItemClicked(ActionEvent actionEvent) {
+    }
+    @FXML
+    public void lvItemSelected(MouseEvent mouseEvent) {
+    }
+    @FXML
+    public void cbListSelect(InputMethodEvent inputMethodEvent) {
     }
 }

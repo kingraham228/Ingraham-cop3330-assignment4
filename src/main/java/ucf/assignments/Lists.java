@@ -25,6 +25,11 @@ public class Lists {
         //remove the ToDoList from the map
     }
 
+    public void mergeLists(Map<String,ArrayList<Item>> fileMap){
+        //use Map.merge() to combine filemap and toDoLists
+        //https://www.baeldung.com/java-merge-maps
+    }
+
     public Map<String, ArrayList<Item>> getToDoLists() {
         return toDoLists;
     }

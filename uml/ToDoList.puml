@@ -22,10 +22,11 @@ class ToDoList{
 }
 
 class Lists{
--toDoLists: Map
+-listMap: Map
 +addList()
 +removeList()
 +getLists()
++mergeLists()
 }
 
 class FileManager{
@@ -40,10 +41,20 @@ class ListDisplay{
 +displayItems()
 -displayUncompleted()
 -displayCompleted()
--emptyDisplayArray()
++emptyDisplayArray()
++getDisplayArray()
 }
 
 class ToDoController{
++updateListView()
++updateCBList()
++mLoadListClicked()
++mLoadMultipleClicked()
++mSaveListClicked()
++mSaveAllListsClicked()
++mAddListClicked()
++mEditListClicked()
++mDeleteListClicked()
 
 }
 
