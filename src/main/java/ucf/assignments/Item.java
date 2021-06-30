@@ -11,17 +11,10 @@ public class Item {
     private Date dueDate;
     private boolean completeStatus;
 
-    public void Item (String description, Date dueDate){
+    public Item(String description, Date dueDate) {
         //construct description to the user description
         //construct due date to the user due date
         //construct completeStatus to default false
-    }
-    public void editDescription(String description){
-        //set description to a new description
-    }
-
-    public void editDueDate(Date dueDate){
-        //set due date to a new due date
     }
 
     public void markComplete(){

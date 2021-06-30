@@ -12,7 +12,7 @@ public class Lists {
     private Map<String, ArrayList<Item>> toDoLists = new HashMap<>();
 
     public void addList(String listName){
-        //Create a new empty ToDoList
+        //Create a new empty ToDoList with listName
         //Add it to the map
     }
 

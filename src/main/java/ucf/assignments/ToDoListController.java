@@ -3,6 +3,7 @@ package ucf.assignments;
  *  UCF COP3330 Summer 2021 Assignment 4 Solution
  *  Copyright 2021 Kate Ingraham
  */
+
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.CheckMenuItem;
@@ -24,10 +25,13 @@ public class ToDoListController {
     @FXML
     public ChoiceBox cbLists;
 
+
     //create a Lists object userLists
     //create a FileManager object
     //create a ListDisplay object
-    //create an observable list of objects
+    //create a InputValidator object
+    //create an observable list
+
 
     public void updateListView(ArrayList<Item> displayArray ){
         //make the observable list equal the display array
@@ -115,6 +119,9 @@ public class ToDoListController {
     }
     @FXML
     public void mDisplayCompletedClicked(ActionEvent actionEvent) {
+        //get the cbLists selection model
+        //call displayItems() with the selection model and value of selection model
+        //call updateListView() with getDisplayArray()
     }
     @FXML
     public void mSortDescriptionClicked(ActionEvent actionEvent) {
@@ -124,15 +131,60 @@ public class ToDoListController {
     }
     @FXML
     public void bAddItemClicked(ActionEvent actionEvent) {
+        //get the cbLists selection model
+        //set String targetlist with selection model
+        //Create a new ToDoList adding with targetlist and value of targetlist
+        //open a text input dialogue
+        //ask the user to input the new description
+        //ask the user to input the new due date
+        //call checkDate() with due date
+        //if true
+            //call adding.addItem() with description, due date
+            //set the value of userLists targetlist to the new ToDoList
+        //call displayItems() targetlist, value of targetlist
+        //call updateListView() with getDisplayArray()
     }
     @FXML
     public void bEditItemClicked(ActionEvent actionEvent) {
+        //get the cbLists selection model
+        //set String targetlist with selection model
+        //Create new ToDoList with targetlist, value of targetlist
+        //get the listView selection model
+        //set int index to the index value of the listView selection model
+        //open a text input dialogue
+        //ask the user to input the new description
+        //ask the user to input the new due date
+        //ask the user to check completed or uncompleted
+        //call checkDate() with due date
+        //if true
+            //call editItem() with description, dueDate, index, check
+            //set the value of userLists targetlist to new ToDoList
+        //call displayItems() targetlist, value of targetlist
+        //call updateListView() with getDisplayArray()
     }
     @FXML
     public void bDeleteItemClicked(ActionEvent actionEvent) {
+        //get the cbLists selection model
+        //set String targetlist with selection model
+        //Create new ToDoList with targetlist, value of targetlist
+        //get the listView selection model
+        //set int index to the index value of the listView selection model
+        //call removeItem() index
+        //set the value of userLists targetlist to new ToDoList
+        //call displayItems() targetlist, value of targetlist
+        //call updateListView() with getDisplayArray()
     }
     @FXML
     public void bCompleteItemClicked(ActionEvent actionEvent) {
+        //get the cbLists selection model
+        //set String targetlist with selection model
+        //Create new ToDoList with targetlist, value of targetlist
+        //get the listView selection model
+        //set int index to the index value of the listView selection model
+        //call markComplete(), index
+        //set the value of userLists targetlist to new ToDoList
+        //call displayItems() targetlist, value of targetlist
+        //call updateListView() with getDisplayArray()
     }
     @FXML
     public void lvItemSelected(MouseEvent mouseEvent) {

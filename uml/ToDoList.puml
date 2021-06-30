@@ -3,20 +3,15 @@ class Item{
 -description: String
 -dueDate: Date
 -completeStatus: boolean
-+editDescription()
-+editDueDate()
-+markComplete()
-+getDescription()
-+getDueDate()
-+getCompleteStatus()
 }
 
 class ToDoList{
 -listTitle: String
 -items: ArrayList
-+editTitle()
 +addItem()
++editItem()
 +removeItem()
++markComplete()
 +getListTitle()
 +getItems()
 }
@@ -46,6 +41,10 @@ class ListDisplay{
 }
 
 class ToDoController{
++mCheckUncompleted: CheckMenuItem
++mCheckCompleted: CheckMenuItem
++listView: ListView
++cbLists: ChoiceBox
 +updateListView()
 +updateCBList()
 +mLoadListClicked()
@@ -55,7 +54,12 @@ class ToDoController{
 +mAddListClicked()
 +mEditListClicked()
 +mDeleteListClicked()
-
++mDisplayUncompletedClicked()
++mDisplayCompletedClicked()
++bAddItemClicked()
++bEditItemClicked()
++bDeleteItemClicked()
++bCompleteItemClicked()
 }
 
 class App{
