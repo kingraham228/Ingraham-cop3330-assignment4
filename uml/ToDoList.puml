@@ -36,6 +36,7 @@ class ListDisplay{
 -displayUncompleted()
 -displayCompleted()
 +emptyDisplayArray()
++sortDisplayArray()
 +getDisplayArray()
 }
 
