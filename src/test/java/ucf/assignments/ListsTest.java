@@ -46,4 +46,16 @@ class ListsTest {
         //set expected to be the map without the target item
         //assert that the maps are equal
     }
+
+    @Test
+    void editList() {
+        //create a new Lists object
+        //create a map of a toDoList
+        //Set String oldname of key in toDolist
+        //Set string newName
+        //call editList(), oldname, newName
+        //set string actual as map
+        //set string expected as map with edit included
+        //assert that expected matches actual
+    }
 }

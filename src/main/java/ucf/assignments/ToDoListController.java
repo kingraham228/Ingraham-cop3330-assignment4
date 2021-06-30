@@ -102,8 +102,7 @@ public class ToDoListController {
         //open a text input dialogue
             //existing list name in the textfield
         //set String newListName to new user input
-        //call addList() newListName, value of oldName
-        //call removeList() oldName map entry
+        //call editList(), oldName, newListName
         //call updateCBList()
         //call displayItems() userLists, newListName
         //call updateListView() with getDisplayArray()
