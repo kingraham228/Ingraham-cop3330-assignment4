@@ -19,6 +19,7 @@ class Lists{
 -listMap: Map
 +addList()
 +removeList()
++editList()
 +getListMap()
 +mergeLists()
 }
@@ -74,8 +75,7 @@ class InputValidator{
 }
 
 
-
-
+org.javafx.Application <|-- App
 App -- ToDoController
 ToDoController o-- Lists
 ToDoController o-- ListDisplay
