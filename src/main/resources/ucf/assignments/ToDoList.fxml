@@ -71,7 +71,6 @@
                   <CheckMenuItem fx:id="mCheckUncompleted" mnemonicParsing="false" onAction="#mDisplayUncompletedClicked" text="Display Uncompleted Items" />
                   <CheckMenuItem fx:id="mCheckCompleted" mnemonicParsing="false" onAction="#mDisplayCompletedClicked" text="Display Completed Items" />
                   <SeparatorMenuItem mnemonicParsing="false" />
-                  <MenuItem mnemonicParsing="false" onAction="#mSortDescriptionClicked" text="Sort Items by Description" />
                   <MenuItem mnemonicParsing="false" onAction="#mSortDueDateClicked" text="Sort Items by Due Date" />
           </items>
         </Menu>
@@ -92,7 +91,7 @@
         </rowConstraints>
          <children>
             <ChoiceBox fx:id="cbLists" maxWidth="1.7976931348623157E308" onInputMethodTextChanged="#cbListSelect" GridPane.columnIndex="1" GridPane.columnSpan="2" />
-            <ListView fx:id="listView" onMouseClicked="#lvItemSelected" prefHeight="200.0" prefWidth="200.0" GridPane.columnSpan="4" GridPane.rowIndex="1" GridPane.rowSpan="2">
+            <ListView fx:id="listView" prefHeight="200.0" prefWidth="200.0" GridPane.columnSpan="4" GridPane.rowIndex="1" GridPane.rowSpan="2">
                <GridPane.margin>
                   <Insets bottom="8.0" left="16.0" right="16.0" />
                </GridPane.margin></ListView>

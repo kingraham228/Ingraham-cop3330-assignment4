@@ -16,20 +16,4 @@ public class Item {
         //construct due date to the user due date
         //construct completeStatus to default false
     }
-
-    public void markComplete(){
-        //set completeStatus to true
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public Date getDueDate() {
-        return dueDate;
-    }
-
-    public boolean isCompleteStatus() {
-        return completeStatus;
-    }
 }

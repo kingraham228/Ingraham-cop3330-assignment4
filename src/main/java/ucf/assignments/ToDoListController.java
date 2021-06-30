@@ -44,6 +44,11 @@ public class ToDoListController {
             // add all userLists map keys as CBList items
     }
 
+    @FXML
+    public void cbListSelect(InputMethodEvent inputMethodEvent) {
+        //call displayItems() userLists, cbList selection model
+        //call updateListView() with displayArray
+    }
 
     @FXML
     public void mLoadListClicked(ActionEvent actionEvent) {
@@ -87,7 +92,7 @@ public class ToDoListController {
         //set String listName to user input
         //call addList() with listName
         //call updateCBList()
-        //call displayItems() with listName and value of listname
+        //call displayItems() with userLists, listName
         //call updateListView() with getdisplayArray()
     }
     @FXML
@@ -100,7 +105,7 @@ public class ToDoListController {
         //call addList() newListName, value of oldName
         //call removeList() oldName map entry
         //call updateCBList()
-        //call displayItems() newListName, value of newListName
+        //call displayItems() userLists, newListName
         //call updateListView() with getDisplayArray()
     }
     @FXML
@@ -114,20 +119,20 @@ public class ToDoListController {
     @FXML
     public void mDisplayUncompletedClicked(ActionEvent actionEvent) {
         //get the cbLists selection model
-        //call displayItems() with the selection model and value of selection model
+        //call displayItems() with userLists, the selection model
         //call updateListView() with getDisplayArray()
     }
     @FXML
     public void mDisplayCompletedClicked(ActionEvent actionEvent) {
         //get the cbLists selection model
-        //call displayItems() with the selection model and value of selection model
+        //call displayItems() with userLists, the selection model
         //call updateListView() with getDisplayArray()
     }
-    @FXML
-    public void mSortDescriptionClicked(ActionEvent actionEvent) {
-    }
+
     @FXML
     public void mSortDueDateClicked(ActionEvent actionEvent) {
+        //call sortDisplayArray()
+        //call updateListView() with getDisplayArray()
     }
     @FXML
     public void bAddItemClicked(ActionEvent actionEvent) {
@@ -141,7 +146,7 @@ public class ToDoListController {
         //if true
             //call adding.addItem() with description, due date
             //set the value of userLists targetlist to the new ToDoList
-        //call displayItems() targetlist, value of targetlist
+        //call displayItems() userLists, targetlist
         //call updateListView() with getDisplayArray()
     }
     @FXML
@@ -159,7 +164,7 @@ public class ToDoListController {
         //if true
             //call editItem() with description, dueDate, index, check
             //set the value of userLists targetlist to new ToDoList
-        //call displayItems() targetlist, value of targetlist
+        //call displayItems() userLists, targetlist
         //call updateListView() with getDisplayArray()
     }
     @FXML
@@ -171,7 +176,7 @@ public class ToDoListController {
         //set int index to the index value of the listView selection model
         //call removeItem() index
         //set the value of userLists targetlist to new ToDoList
-        //call displayItems() targetlist, value of targetlist
+        //call displayItems() userLists, targetlist
         //call updateListView() with getDisplayArray()
     }
     @FXML
@@ -183,13 +188,8 @@ public class ToDoListController {
         //set int index to the index value of the listView selection model
         //call markComplete(), index
         //set the value of userLists targetlist to new ToDoList
-        //call displayItems() targetlist, value of targetlist
+        //call displayItems() userLists, targetlist
         //call updateListView() with getDisplayArray()
     }
-    @FXML
-    public void lvItemSelected(MouseEvent mouseEvent) {
-    }
-    @FXML
-    public void cbListSelect(InputMethodEvent inputMethodEvent) {
-    }
+
 }

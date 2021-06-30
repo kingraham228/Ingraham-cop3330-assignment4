@@ -40,6 +40,11 @@ public class ListDisplay {
         //if there is stuff in the displayArray, empty it.
     }
 
+    public void sortDisplayArray(){
+        //define a comparator for dueDate
+        //sort displayArray with Collections.sort on dueDate
+    }
+
     public ArrayList<Item> getDisplayArray() {
         return displayArray;
     }

@@ -20,7 +20,6 @@ public class ToDoList {
         //construct a ToDoList with existing items
         //set listTitle to this listTitle
         //set items to this items
-
     }
 
     public void addItem(String description, Date dueDate){
@@ -29,7 +28,7 @@ public class ToDoList {
     }
 
     public void removeItem(int index){
-        //remove an item from the items list
+        //remove the item at index from the items array
     }
 
     public void editItem(String description, Date dueDate, int index, boolean status){
@@ -40,10 +39,6 @@ public class ToDoList {
         //Create a new Item with value of items[index]
         //set new item status to true
         //set the value of items[index] to the new item
-    }
-
-    public String getListTitle() {
-        return listTitle;
     }
 
     public ArrayList<Item> getItems() {

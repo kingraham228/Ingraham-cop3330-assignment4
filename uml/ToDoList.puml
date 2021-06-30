@@ -12,7 +12,6 @@ class ToDoList{
 +editItem()
 +removeItem()
 +markComplete()
-+getListTitle()
 +getItems()
 }
 
@@ -20,7 +19,7 @@ class Lists{
 -listMap: Map
 +addList()
 +removeList()
-+getLists()
++getListMap()
 +mergeLists()
 }
 
@@ -47,6 +46,7 @@ class ToDoController{
 +cbLists: ChoiceBox
 +updateListView()
 +updateCBList()
++cbListSelect()
 +mLoadListClicked()
 +mLoadMultipleClicked()
 +mSaveListClicked()
@@ -60,6 +60,7 @@ class ToDoController{
 +bEditItemClicked()
 +bDeleteItemClicked()
 +bCompleteItemClicked()
++mSortDueDateClicked()
 }
 
 class App{

@@ -9,7 +9,7 @@ import java.util.Map;
 
 
 public class Lists {
-    private Map<String, ArrayList<Item>> toDoLists = new HashMap<>();
+    private Map<String, ArrayList<Item>> listMap = new HashMap<>();
 
     public void addList(String listName){
         //Create a new empty ToDoList with listName
@@ -30,7 +30,7 @@ public class Lists {
         //https://www.baeldung.com/java-merge-maps
     }
 
-    public Map<String, ArrayList<Item>> getToDoLists() {
-        return toDoLists;
+    public Map<String, ArrayList<Item>> getListMap() {
+        return listMap;
     }
 }
