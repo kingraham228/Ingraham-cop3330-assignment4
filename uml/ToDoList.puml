@@ -1,7 +1,7 @@
 @startuml
 class Item{
 -description: String
--dueDate: Date
+-dueDate: String
 -completeStatus: boolean
 }
 

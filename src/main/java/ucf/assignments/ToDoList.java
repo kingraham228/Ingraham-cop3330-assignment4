@@ -22,7 +22,7 @@ public class ToDoList {
         //set items to this items
     }
 
-    public void addItem(String description, Date dueDate){
+    public void addItem(String description, String dueDate){
         //create a new item, description, dueDate
         //add a new item to the items array list
     }
@@ -31,7 +31,7 @@ public class ToDoList {
         //remove the item at index from the items array
     }
 
-    public void editItem(String description, Date dueDate, int index, boolean status){
+    public void editItem(String description, String dueDate, int index, boolean status){
         //set items[index] to value description, dueDate, status
     }
 

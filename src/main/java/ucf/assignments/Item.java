@@ -8,10 +8,10 @@ import java.util.Date;
 
 public class Item {
     private String description;
-    private Date dueDate;
+    private String dueDate;
     private boolean completeStatus;
 
-    public Item(String description, Date dueDate) {
+    public Item(String description, String dueDate) {
         //construct description to the user description
         //construct due date to the user due date
         //construct completeStatus to default false
